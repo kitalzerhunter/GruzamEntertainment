@@ -48,14 +48,29 @@
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </p>
 
-    <input type="button" value="pink" onclick="
+    <input type="button" value="black" onclick="
       var target = document.querySelector('body');
-      if(this.value==='pink'){
-        target.style.backgroundColor = 'pink';
+      if(this.value==='black'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
         this.value = 'white';
+
+        var links = document.querySelectorAll('a');
+        var i = 0;
+        while(i<links.length){
+          links[i].style.color='white';
+          i=i+1;
+        }
       } else {
         target.style.backgroundColor ='white';
-        this.value = 'pink';
+        this.value = 'black';
+
+        var links = document.querySelectorAll('a');
+        var i = 0;
+        while(i<links.length){
+          links[i].style.color='black';
+          i=i+1;
+        }
       }
     ">
 
