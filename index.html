@@ -4,33 +4,37 @@
   <title>GRUZAM ENTERTAINMENT</title>
   <meta charset="utf-8">
   <script>
-    function backColorHandler(self){
-      var target = document.querySelector('body');
-      if(self.value==='black'){
-        target.style.backgroundColor = 'black';
-        target.style.color = 'white';
-        self.value = 'white';
-
-        var links = document.querySelectorAll('a');
-        var i = 0;
-        while(i<links.length){
-          links[i].style.color='white';
-          i=i+1;
-        }
-      } else {
-        target.style.backgroundColor ='white';
-        target.style.color = 'black';
-        self.value = 'black';
-
-
-        var links = document.querySelectorAll('a');
-        var i = 0;
-        while(i<links.length){
-          links[i].style.color='black';
-          i=i+1;
-        }
+    function LinksSetColor(color){
+      var links = document.querySelectorAll('a');
+      var i = 0;
+      while(i<links.length){
+        links[i].style.color = color;
+        i = i + 1;
       }
     }
+    function BodySetColor(color){
+      document.querySelector('body').style.color = color;
+    }
+    function BodySetBackgroundColor(color){
+      document.querySelector('body').style.backgroundColor = color;
+    }
+    function backColorHandler(self){
+      var target = document.querySelector('body');
+      if(self.value === 'black'){
+        BodySetBackgroundColor('black');
+        BodySetColor('white');
+        self.value = 'white';
+
+        LinksSetColor('white');
+        }else{
+        BodySetBackgroundColor('white');
+        BodySetColor('black');
+        self.value = 'black';
+
+        LinksSetColor('black');
+        }
+      }
+
   </script>
   <link rel="stylesheet" href="style.css">
 
@@ -56,8 +60,9 @@
     <li><a href="2_karazhan_library.html" class="inactive">Karazhan Library</a></li>
     <li><a href="3_youtube_study.html" class="inactive">Youtube Study</a></li>
     <li><a href="4_game_industry_trends.html" class="inactive">Game Industry Trends</a></li>
-    <li><a href="5_stock_investment.html" class="inactive">Stock Investment</a></li>
-    <li><a href="6_Inside_Out.html" class="inactive">Inside Out</a></li>
+    <li><a href="5_AI_industry_trends.html" class="inactive">AI Industry Trends</a></li>
+    <li><a href="6_stock_investment.html" class="inactive">Stock Investment</a></li>
+    <li><a href="7_inside_out.html" class="inactive">Inside Out</a></li>
   </ol>
 
   <!--
