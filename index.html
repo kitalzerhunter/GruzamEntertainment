@@ -4,34 +4,41 @@
   <title>GRUZAM ENTERTAINMENT</title>
   <meta charset="utf-8">
   <script>
-    function LinksSetColor(color){
-      var links = document.querySelectorAll('a');
-      var i = 0;
-      while(i<links.length){
-        links[i].style.color = color;
-        i = i + 1;
+    var Links = {
+      SetColor:function(color){
+        var links = document.querySelectorAll('a');
+        var i = 0;
+        while(i<links.length){
+          links[i].style.color = color;
+          i = i + 1;
+      }
       }
     }
-    function BodySetColor(color){
-      document.querySelector('body').style.color = color;
+
+    var Body = {
+      SetColor:function(color){
+        document.querySelector('body').style.color = color;
+      },
+
+      SetBackgroundColor:function(color){
+        document.querySelector('body').style.backgroundColor = color;
+      }
     }
-    function BodySetBackgroundColor(color){
-      document.querySelector('body').style.backgroundColor = color;
-    }
+
     function backColorHandler(self){
       var target = document.querySelector('body');
       if(self.value === 'black'){
-        BodySetBackgroundColor('black');
-        BodySetColor('white');
+        Body.SetBackgroundColor('black');
+        Body.SetColor('white');
         self.value = 'white';
 
-        LinksSetColor('white');
+        Links.SetColor('white');
         }else{
-        BodySetBackgroundColor('white');
-        BodySetColor('black');
+        Body.SetBackgroundColor('white');
+        Body.SetColor('black');
         self.value = 'black';
 
-        LinksSetColor('black');
+        Links.SetColor('black');
         }
       }
 
