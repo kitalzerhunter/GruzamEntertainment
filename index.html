@@ -3,47 +3,29 @@
 <head>
   <title>GRUZAM ENTERTAINMENT</title>
   <meta charset="utf-8">
-  <script>
-    var Links = {
-      SetColor:function(color){
-        var links = document.querySelectorAll('a');
-        var i = 0;
-        while(i<links.length){
-          links[i].style.color = color;
-          i = i + 1;
-      }
-      }
-    }
 
-    var Body = {
-      SetColor:function(color){
-        document.querySelector('body').style.color = color;
-      },
-
-      SetBackgroundColor:function(color){
-        document.querySelector('body').style.backgroundColor = color;
-      }
-    }
-
-    function backColorHandler(self){
-      var target = document.querySelector('body');
-      if(self.value === 'black'){
-        Body.SetBackgroundColor('black');
-        Body.SetColor('white');
-        self.value = 'white';
-
-        Links.SetColor('white');
-        }else{
-        Body.SetBackgroundColor('white');
-        Body.SetColor('black');
-        self.value = 'black';
-
-        Links.SetColor('black');
-        }
-      }
-
-  </script>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154162205-1"></script>
@@ -57,96 +39,45 @@
 </head>
 
 <body>
-  <h1><a href="index.html" class="active">
-    GRUZAM ENTERTAINMENT</a></h1>
-  <h2 style="text-align:center" id="subtitle">찰나를 울리는 영원의 메아리 - 삶의 방향성을 바꾸는 게임</h2>
+  <div style="background-color:#B71C1C">
+    <h1><a href="index.html" class="inactive">
+      GRUZAM ENTERTAINMENT</a></h1>
+    <h2 style="text-align:center" id="subtitle">찰나를 울리는 영원의 메아리 - 삶의 방향성을 바꾸는 게임</h2>
+  </div>
 
-<div id="grid">
-  <ul class="table">
-    <font size="7">Inventory</font>
-    <li><a href="Show_yourself.html" class="inactive">Show Yourself</a></li>
-    <li><a href="Karazhan_library.html" class="inactive">Karazhan Library</a></li>
-    <li><a href="Inside_out.html" class="inactive">Inside Out</a></li>
-    <br>
-    <font size="7">Status</font>
-    <li><a href="Game_industry_trends.html" class="inactive">Game Industry Trends</a></li>
-    <li><a href="AI_industry_trends.html" class="inactive">AI Industry Trends</a></li>
-    <li><a href="Science_and_technology.html" class="inactive">Science & Technology</a></li>
-    <li><a href="The_economist.html" class="inactive">The Economist</a></li>
-    <br>
-    <font size="7">Skills</font>
-    <li><a href="The_war_of_genesis.html" class="inactive">The War of Genesis</a></li>
-    <li><a href="Stock_investment.html" class="inactive">Stock Investment</a></li>
-    <li><a href="Strategy_and_tactics.html" class="inactive">Strategy & Tactics</a></li>
-    <li><a href="Merriam_Webster's.html" class="inactive">Merriam Webster's</a></li>
-    <li><font size="3"><a href="夫學須靜也_才須學也.html" class="inactive">夫學須靜也 才須學也</a></font></li>
-  </ul>
+  <div class="row">
+    <ul class="column" style="background-color:#1B4F72; list-style: none;">
+      <font size="7">Inventory</font>
+        <div style="font-size: 20px;">
+          <li><a href="Show_yourself.html" class="inactive">Show Yourself</a></li>
+          <li><a href="Karazhan_library.html" class="inactive">Karazhan Library</a></li>
+          <li><a href="Inside_out.html" class="inactive">Inside Out</a></li>
+        </div>
+    </ul>
+    <ul class="column" style="background-color:#2874A6; list-style: none;">
+      <font size="7">Status</font>
+        <div style="font-size: 20px;">
+          <li><a href="Game_industry_trends.html" class="inactive">Game Industry Trends</a></li>
+          <li><a href="AI_industry_trends.html" class="inactive">AI Industry Trends</a></li>
+          <li><a href="Science_and_technology.html" class="inactive">Science & Technology</a></li>
+          <li><a href="The_economist.html" class="inactive">The Economist</a></li>
+        </div>
+    </ul>
+    <ul class="column" style="background-color:#3498DB; list-style: none;">
+      <font size="7">Skills</font>
+        <div style="font-size: 20px;">
+          <li><a href="The_war_of_genesis.html" class="inactive">The War of Genesis</a></li>
+          <li><a href="Stock_investment.html" class="inactive">Stock Investment</a></li>
+          <li><a href="Strategy_and_tactics.html" class="inactive">Strategy & Tactics</a></li>
+          <li><a href="Merriam_Webster's.html" class="inactive">Merriam Webster's</a></li>
+          <li><font size="3"><a href="夫學須靜也_才須學也.html" class="inactive">夫學須靜也 才須學也</a></font></li>
+        </div>
+    </ul>
+  </div>
 
 
+      <img src="Warofgenesis_iolin.jpg" width="100%">
 
-
-  <!--
-  <ol>
-    <li><a href="1.html"><font color="red">Show Yourself</font></a></li>
-    <li><a href="2.html"><font color="red">Karazhan Library</font></a></li>
-    <li><a href="3.html"><font color="red">유튜브시청</font></a></li>
-  </ol>
-  -->
-
-
-  <div id="contents">
-    <img src="Warofgenesis_iolin.jpg" width="100%">
-
-    <p style="margin-top:45px;">
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/a2F6M4CLHcI"
-      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </p>
-
-    <input type="button" value="black" onclick="
-      backColorHandler(this);
-    ">
-
-    <br><br>
-    <input type="checkbox">
-    <input type="checkbox">
-    <input type="checkbox">
-
-    <div id="disqus_thread"></div>
-    <script>
-
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://http-localhost-index-html.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5decb28043be710e1d211516/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
 
 
   </div>
