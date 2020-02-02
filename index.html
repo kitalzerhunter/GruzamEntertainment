@@ -12,7 +12,15 @@
   }
 
   /* Create three equal columns that floats next to each other */
-  .column {
+  .column1 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 70px; /* Should be removed. Only for demonstration */
+  }
+
+  /* Create three equal columns that floats next to each other */
+  .column2 {
     float: left;
     width: 33.33%;
     padding: 10px;
@@ -41,36 +49,46 @@
 <body>
   <div style="background-color:#B71C1C">
     <h1><a href="index.html" class="inactive">
-      GRUZAM ENTERTAINMENT</a></h1>
-    <h2 style="text-align:center" id="subtitle">찰나를 울리는 영원의 메아리 - 삶의 방향성을 바꾸는 게임</h2>
+      G<span style="color:#212F3D">RUZ</span>AM E<span style="color:#212F3D">NTERTAINMENT</span>
+    </a></h1>
+    <h2 style="color:#2E4053;text-align:center" id="subtitle">Let Your Soul Resonate with Cosmetic Joyfulness</h2>
   </div>
 
   <div class="row">
-    <ul class="column" style="background-color:#1B4F72; list-style: none;">
-      <font size="7">Inventory</font>
-        <div style="font-size: 20px;">
-          <li><a href="Show_yourself.html" class="inactive">Show Yourself</a></li>
-          <li><a href="Karazhan_library.html" class="inactive">Karazhan Library</a></li>
-          <li><a href="Inside_out.html" class="inactive">Inside Out</a></li>
+    <div class="column1" align="center" style="color:white; background-color:#1B2631; list-style: none;">
+      <div style="font-size: 40px;">INVENTORY</div>
+    </div>
+    <div class="column1" align="center" style="color:white; background-color:#212F3C; list-style: none;">
+      <div style="font-size: 40px;">STATUS</div>
+    </div>
+    <div class="column1" align="center" style="color:white; background-color:#283747; list-style: none;">
+      <div style="font-size: 40px;">SKILLS</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <ul class="column2" align="center" style="font-size: 25px; background-color:#1B4F72; list-style: none; margin-top:0px; margin-bottom:0px;">
+        <div>
+          <li style="background-color:#1B2631; margin-top:3px; margin-bottom:3px;"><a href="Show_yourself.html" class="inactive" style="color:#1B4F72">Show Yourself</a></li>
+          <li style="background-color:#1B2631; margin-top:3px; margin-bottom:3px;"><a href="Karazhan_library.html" class="inactive" style="color:#1B4F72">Karazhan Library</a></li>
+          <li style="background-color:#1B2631; margin-top:3px; margin-bottom:3px;"><a href="Inside_out.html" class="inactive" style="color:#1B4F72">Inside Out</a></li>
         </div>
     </ul>
-    <ul class="column" style="background-color:#2874A6; list-style: none;">
-      <font size="7">Status</font>
-        <div style="font-size: 20px;">
-          <li><a href="Game_industry_trends.html" class="inactive">Game Industry Trends</a></li>
-          <li><a href="AI_industry_trends.html" class="inactive">AI Industry Trends</a></li>
-          <li><a href="Science_and_technology.html" class="inactive">Science & Technology</a></li>
-          <li><a href="The_economist.html" class="inactive">The Economist</a></li>
+    <ul class="column2" align="center" style="font-size: 25px; background-color:#2874A6; list-style: none; margin-top:0px; margin-bottom:0px;">
+        <div>
+          <li style="background-color:#212F3C; margin-top:3px; margin-bottom:3px;"><a href="Game_industry_trends.html" class="inactive" style="color:#2874A6">Game Trends</a></li>
+          <li style="background-color:#212F3C; margin-top:3px; margin-bottom:3px;"><a href="AI_industry_trends.html" class="inactive" style="color:#2874A6">AI Trends</a></li>
+          <li style="background-color:#212F3C; margin-top:3px; margin-bottom:3px;"><a href="Science_and_technology.html" class="inactive" style="color:#2874A6">Science & Tech.</a></li>
+          <li style="background-color:#212F3C; margin-top:3px; margin-bottom:3px;"><a href="The_economist.html" class="inactive" style="color:#2874A6">The Economist</a></li>
         </div>
     </ul>
-    <ul class="column" style="background-color:#3498DB; list-style: none;">
-      <font size="7">Skills</font>
-        <div style="font-size: 20px;">
-          <li><a href="The_war_of_genesis.html" class="inactive">The War of Genesis</a></li>
-          <li><a href="Stock_investment.html" class="inactive">Stock Investment</a></li>
-          <li><a href="Strategy_and_tactics.html" class="inactive">Strategy & Tactics</a></li>
-          <li><a href="Merriam_Webster's.html" class="inactive">Merriam Webster's</a></li>
-          <li><font size="3"><a href="夫學須靜也_才須學也.html" class="inactive">夫學須靜也 才須學也</a></font></li>
+    <ul class="column2" align="center" style="font-size: 25px; background-color:#3498DB; list-style: none; margin-top:0px; margin-bottom:0px;">
+        <div>
+          <li style="background-color:#283747; margin-top:3px; margin-bottom:3px;"><a href="The_war_of_genesis.html" class="inactive" style="color:#3498DB">The War of Genesis</a></li>
+          <li style="background-color:#283747; margin-top:3px; margin-bottom:3px;"><a href="Stock_investment.html" class="inactive" style="color:#3498DB">Stock Investment</a></li>
+          <li style="background-color:#283747; margin-top:3px; margin-bottom:3px;"><a href="Strategy_and_tactics.html" class="inactive" style="color:#3498DB">Strategy & Tactics</a></li>
+          <li style="background-color:#283747; margin-top:3px; margin-bottom:3px;"><a href="Merriam_Webster's.html" class="inactive" style="color:#3498DB">Merriam Webster's</a></li>
+          <li style="background-color:#283747; margin-top:3px; margin-bottom:3px;"><font size="5"><a href="夫學須靜也_才須學也.html" class="inactive" style="color:#3498DB">夫學須靜也 才須學也</a></font></li>
         </div>
     </ul>
   </div>
