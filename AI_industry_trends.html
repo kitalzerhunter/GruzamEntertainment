@@ -56,6 +56,10 @@
 
 
 
+
+    <a href="https://www.youtube.com/watch?v=Ttv5PuxU0Is" target="_blank" title="써에이스쇼">
+      AI가 세상을 지배할 것인가? (인공지능의 한계와 위험)</a><br>
+
     <a href="https://www.youtube.com/watch?v=iPZFKUC1fOM" target="_blank" title="더나은삶TV">
       노동의 시대가 끝난다고?! 지금껏 겪어보지 못한 세상이 열리는 이유!!</a><br>
 
@@ -176,10 +180,11 @@
 
   <script>
     var exp = document.querySelectorAll('#contents > a');
-    var level = exp.length/10 - (exp.length%10)/10;
+    var level = Math.floor(exp.length/10);
     document.write("EXP: " + exp.length + "<br>");
     document.write("LEVEL: " + level);
   </script>
+
 
 
 

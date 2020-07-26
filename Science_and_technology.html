@@ -177,11 +177,10 @@
 
   <script>
     var exp = document.querySelectorAll('#contents > a');
-    var level = exp.length/10 - (exp.length%10)/10;
+    var level = Math.floor(exp.length/10);
     document.write("EXP: " + exp.length + "<br>");
     document.write("LEVEL: " + level);
   </script>
-
 
 
   <br><br><br>

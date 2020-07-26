@@ -56,7 +56,7 @@
 
 
 
-  <h1>The War of Genesis[Lv.82]</h1><br><br><br>
+  <h1>The War of Genesis[Lv.84]</h1><br><br><br>
 
 
 
@@ -186,22 +186,22 @@
       <a>*</a><a>*</a><a>01. View - 08. Relativelayout (실습)</a><br>
       <a>*</a><a>*</a><a>01. View - 09. FrameLayout (개념)</a><br>
       <a>*</a><a>*</a><a>01. View - 10. FrameLayout (실습)</a><br>
-      <a>*</a><a>01. View - 11. Scrollview (개념)</a><br>
-      <a>*</a><a>01. View - 12. Scrollview (실습)</a><br>
-      <a>*</a><a>01. View - 13. [과제] 과제 설명</a><br>
-      <a>*</a><a>01. View - 14. 과제 풀이 (1)</a><br>
-      <a>*</a><a>01. View - 15. 과제 풀이 (2)</a><br>
-      <a>*</a><a>01. View - 16. 과제 풀이 (3)</a><br>
-      <a>*</a><a>02. Java - 01. 자바란</a><br>
-      <a>*</a><a>02. Java - 02. 변수 (개념)</a><br>
-      <a>*</a><a>02. Java - 03. 자료형 (개념)</a><br>
-      <a>*</a><a>02. Java - 04. 변수,자료형 (실습)</a><br>
+      <a>*</a><a>*</a><a>01. View - 11. Scrollview (개념)</a><br>
+      <a>*</a><a>*</a><a>01. View - 12. Scrollview (실습)</a><br>
+      <a>*</a><a>*</a><a>01. View - 13. [과제] 과제 설명</a><br>
+      <a>*</a><a>*</a><a>01. View - 14. 과제 풀이 (1)</a><br>
+      <a>*</a><a>*</a><a>01. View - 15. 과제 풀이 (2)</a><br>
+      <a>*</a><a>*</a><a>01. View - 16. 과제 풀이 (3)</a><br>
+      <a>*</a><a>*</a><a>02. Java - 01. 자바란</a><br>
+      <a>*</a><a>*</a><a>02. Java - 02. 변수 (개념)</a><br>
+      <a>*</a><a>*</a><a>02. Java - 03. 자료형 (개념)</a><br>
+      <a>*</a><a>*</a><a>02. Java - 04. 변수,자료형 (실습)</a><br>
       <a>*</a><a>02. Java - 05. 메소드 (개념)</a><br>
-      <a>*</a><a>02. Java - 06. 메소드 (실습)</a><br>
-      <a>*</a><a>02. Java - 07. 연산자 (개념)</a><br>
-      <a>*</a><a>02. Java - 08. 연산 (실습)</a><br>
-      <a>*</a><a>02. Java - 09. 제어흐름 (개념)</a><br>
-      <a>*</a><a>02. Java - 10. 제어흐름 (실습)</a><br>
+      <a>*</a><a>*</a><a>02. Java - 06. 메소드 (실습)</a><br>
+      <a>*</a><a>*</a><a>02. Java - 07. 연산자 (개념)</a><br>
+      <a>*</a><a>*</a><a>02. Java - 08. 연산 (실습)</a><br>
+      <a>*</a><a>*</a><a>02. Java - 09. 제어흐름 (개념)</a><br>
+      <a>*</a><a>*</a><a>02. Java - 10. 제어흐름 (실습)</a><br>
       <a>*</a><a>02. Java - 11. 제어흐름2 (개념)</a><br>
       <a>*</a><a>02. Java - 12. 제어흐름2 (실습)</a><br>
       <a>*</a><a>02. Java - 13. 배열 (개념)</a><br>
@@ -1220,7 +1220,7 @@
 
   <script>
     var exp = document.querySelectorAll('#contents > a');
-    var level = exp.length/10 - (exp.length%10)/10;
+    var level = Math.floor(exp.length/10);
     document.write("EXP: " + exp.length + "<br>");
     document.write("LEVEL: " + level);
   </script>
