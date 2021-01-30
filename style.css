@@ -72,60 +72,62 @@ h1 {
 
 .pulse1:hover,
 .pulse1:active {
-  -webkit-animation: pulse 1s;
-          animation: pulse 1s;
-  box-shadow: 0 0 0 100em rgba(0, 0, 255, 0);
+  -webkit-animation: pulse 1.5s;
+          animation: pulse 1.5s;
+  box-shadow: 0 0 100em 100em rgba(0, 0, 0, 0);
 }
 
 .pulse2:hover,
 .pulse2:active {
-  -webkit-animation: pulse 1s;
-          animation: pulse 1s;
-  box-shadow: 0 0 0 100em rgba(0, 0, 255, 0);
+  -webkit-animation: pulse 1.5s;
+          animation: pulse 1.5s;
+  box-shadow: 0 0 100em 100em rgba(0, 0, 0, 0);
 }
 
 .pulse3:hover,
 .pulse3:active {
-  -webkit-animation: pulse 1s;
-          animation: pulse 1s;
-  box-shadow: 0 0 0 100em rgba(0, 0, 255, 0);
+  -webkit-animation: pulse 1.5s;
+          animation: pulse 1.5s;
+  box-shadow: 0 0 100em 100em rgba(0, 0, 0, 0);
 }
 
 @-webkit-keyframes pulse {
-  0% {
+  60% {
     box-shadow: 0 0 0 0 var(--hover);
   }
 }
 
 @keyframes pulse {
-  0% {
+  60% {
     box-shadow: 0 0 0 0 var(--hover);
   }
 }
 
 
 .pulse1 {
-  --color: #0400ff;
+  --color: #030303;
   --hover: #0400ff;
 }
 
 .pulse2 {
-  --color: #f7070f;
+  --color: #030303;
   --hover: #f7070f;
 }
 
 .pulse3 {
-  --color: #ffffff;
+  --color: #030303;
   --hover: #ffffff;
 }
 
 button {
   color: var(--color);
-  transition: 0.25s;
+  transition: 3s;
 }
+
 button:hover, button:active {
   border-color: var(--hover);
-  color: #fff;
+  color: #f0f000;
+  width: 30%;
 }
 
 button {
