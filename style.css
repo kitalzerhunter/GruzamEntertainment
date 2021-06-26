@@ -91,6 +91,13 @@ h1 {
   box-shadow: 0 0 100em 100em rgba(0, 0, 0, 0);
 }
 
+.pulse4:hover,
+.pulse4:active {
+  -webkit-animation: pulse 1.5s;
+          animation: pulse 1.5s;
+  box-shadow: 0 0 100em 100em rgba(0, 0, 0, 0);
+}
+
 @-webkit-keyframes pulse {
   60% {
     box-shadow: 0 0 0 0 var(--hover);
@@ -117,6 +124,11 @@ h1 {
 .pulse3 {
   --color: #030303;
   --hover: #ffffff;
+}
+
+.pulse4 {
+  --color: #030303;
+  --hover: #7407b3;
 }
 
 button {
